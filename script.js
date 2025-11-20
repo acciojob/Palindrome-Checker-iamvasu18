@@ -2,12 +2,6 @@
 
 function palindrome(str){
 	let rev=str.split("").reverse().join("");
-	if(rev===str){
-		console.log("True");
-	}
-	else{
-		console.log("false");
-	}
-
+	return rev.toLowerCase() === str.toLowerCase()
 }
 module.exports = palindrome
